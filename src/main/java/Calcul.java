@@ -51,6 +51,7 @@ public class Calcul {
             scanner.next();
             c=getSym();
         }
+
         return c;
 
     }
@@ -107,4 +108,21 @@ public class Calcul {
             System.out.println("a==b");
 
     }
+    public  String getString(){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Введите строку: ");
+        String res;
+        if(scanner.hasNext()) {
+            res = scanner.next();
+
+        }else {
+            System.out.println("ОШИБКА. Введите еще раз");
+            scanner.next();
+            res=getString();
+
+        }
+
+        return res;
+    }
+
 }

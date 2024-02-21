@@ -12,18 +12,20 @@ public class main_Task2 {
         // в задании было все таки Написать программу, которая принимает на вход два целых числа (a и b) и совершает с ними следующие действия:про символы не говорилось но сделал и так и так
         char symbol= calcul.getSym();
         calcul.calculator(a,b,symbol);
-
-
-
         // 2
-        String a1="abde";
-        String b1="abcde";
+        String a1=calcul.getString();
+        String b1=calcul.getString();
+       // String a1="abde";
+       // String b1="abcde";
         calcul.commpareString(a1,b1);
         // 3
         int[]ar= {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("четные числа: ");
         calcul.evenNumbers(ar);
     }
+
+
+
 
 
 //mozno ulucshit(vremeni net)
